@@ -12,9 +12,9 @@
 
 @property (nonatomic, strong) NSString *contents;//纸牌内容
 
-@property (nonatomic, assign) BOOL chosen;
+@property (nonatomic, assign) BOOL isChosen;
 
-@property (nonatomic, assign) BOOL matched;
+@property (nonatomic, assign) BOOL isMatched;
 
 - (int)match:(NSArray *)otherCards;//匹配规则
 

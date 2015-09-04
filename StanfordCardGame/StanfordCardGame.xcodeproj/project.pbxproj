@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E63BBAB1B98942900B0951A /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E63BBAA1B98942900B0951A /* CardMatchingGame.m */; };
 		4E76D5221B95EFB800818995 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E76D5211B95EFB800818995 /* main.m */; };
 		4E76D5251B95EFB800818995 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E76D5241B95EFB800818995 /* AppDelegate.m */; };
 		4E76D5281B95EFB800818995 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E76D5271B95EFB800818995 /* ViewController.m */; };
@@ -31,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E63BBA91B98942900B0951A /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardMatchingGame.h; sourceTree = "<group>"; };
+		4E63BBAA1B98942900B0951A /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardMatchingGame.m; sourceTree = "<group>"; };
 		4E76D51C1B95EFB800818995 /* StanfordCardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StanfordCardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E76D5201B95EFB800818995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E76D5211B95EFB800818995 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -72,6 +75,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E6A0B2F1B973F8000C46551 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E63BBA91B98942900B0951A /* CardMatchingGame.h */,
+				4E63BBAA1B98942900B0951A /* CardMatchingGame.m */,
+				4E76D5451B95EFE000818995 /* Card.h */,
+				4E76D5461B95EFE000818995 /* Card.m */,
+				4E76D5481B95F29F00818995 /* Deck.h */,
+				4E76D5491B95F29F00818995 /* Deck.m */,
+				4E76D54B1B95F7D300818995 /* PlayingCard.h */,
+				4E76D54C1B95F7D300818995 /* PlayingCard.m */,
+				4E76D54E1B9601E300818995 /* PlayingCardDeck.h */,
+				4E76D54F1B9601E300818995 /* PlayingCardDeck.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		4E76D5131B95EFB800818995 = {
 			isa = PBXGroup;
 			children = (
@@ -95,14 +115,7 @@
 			children = (
 				4E76D5261B95EFB800818995 /* ViewController.h */,
 				4E76D5271B95EFB800818995 /* ViewController.m */,
-				4E76D5451B95EFE000818995 /* Card.h */,
-				4E76D5461B95EFE000818995 /* Card.m */,
-				4E76D5481B95F29F00818995 /* Deck.h */,
-				4E76D5491B95F29F00818995 /* Deck.m */,
-				4E76D54B1B95F7D300818995 /* PlayingCard.h */,
-				4E76D54C1B95F7D300818995 /* PlayingCard.m */,
-				4E76D54E1B9601E300818995 /* PlayingCardDeck.h */,
-				4E76D54F1B9601E300818995 /* PlayingCardDeck.m */,
+				4E6A0B2F1B973F8000C46551 /* Model */,
 				4E76D5291B95EFB800818995 /* Main.storyboard */,
 				4E76D52C1B95EFB800818995 /* Images.xcassets */,
 				4E76D52E1B95EFB800818995 /* LaunchScreen.xib */,
@@ -243,6 +256,7 @@
 				4E76D54A1B95F29F00818995 /* Deck.m in Sources */,
 				4E76D5281B95EFB800818995 /* ViewController.m in Sources */,
 				4E76D5251B95EFB800818995 /* AppDelegate.m in Sources */,
+				4E63BBAB1B98942900B0951A /* CardMatchingGame.m in Sources */,
 				4E76D5501B9601E300818995 /* PlayingCardDeck.m in Sources */,
 				4E76D5221B95EFB800818995 /* main.m in Sources */,
 				4E76D5471B95EFE000818995 /* Card.m in Sources */,
@@ -440,6 +454,7 @@
 				4E76D5411B95EFB800818995 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E76D5421B95EFB800818995 /* Build configuration list for PBXNativeTarget "StanfordCardGameTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +463,7 @@
 				4E76D5441B95EFB800818995 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
