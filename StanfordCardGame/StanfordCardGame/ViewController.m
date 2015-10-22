@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "PlayingCard.h"
 #import "Deck.h"
-#import "PlayingCardDeck.h"
 #import "CardMatchingGame.h"
 
 @interface ViewController ()
@@ -32,9 +31,9 @@
 }
 
 
-- (Deck *)creatDeck
+- (Deck *)creatDeck //抽象
 {
-    return [[PlayingCardDeck alloc] init];
+    return nil;
 }
 
 
@@ -58,7 +57,7 @@
     }
     
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %ld", (long)self.game.score];
-}
+} 
 
 - (NSString *)titleForCard:(Card *)card
 {
